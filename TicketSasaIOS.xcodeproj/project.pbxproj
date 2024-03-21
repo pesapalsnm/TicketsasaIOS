@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78E1D97A2BACAB6B00D284A0 /* TicketSasaIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E1D9792BACAB6B00D284A0 /* TicketSasaIOSApp.swift */; };
+		78E1D97C2BACAB6B00D284A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E1D97B2BACAB6B00D284A0 /* ContentView.swift */; };
+		78E1D97E2BACAB6B00D284A0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E1D97D2BACAB6B00D284A0 /* Item.swift */; };
+		78E1D9802BACAB6E00D284A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78E1D97F2BACAB6E00D284A0 /* Assets.xcassets */; };
+		78E1D9832BACAB6E00D284A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78E1D9822BACAB6E00D284A0 /* Preview Assets.xcassets */; };
+		78E1D98D2BACAB6E00D284A0 /* TicketSasaIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E1D98C2BACAB6E00D284A0 /* TicketSasaIOSTests.swift */; };
+		78E1D9972BACAB6E00D284A0 /* TicketSasaIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E1D9962BACAB6E00D284A0 /* TicketSasaIOSUITests.swift */; };
+		78E1D9992BACAB6E00D284A0 /* TicketSasaIOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E1D9982BACAB6E00D284A0 /* TicketSasaIOSUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78E1D9892BACAB6E00D284A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78E1D96E2BACAB6B00D284A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78E1D9752BACAB6B00D284A0;
+			remoteInfo = TicketSasaIOS;
+		};
+		78E1D9932BACAB6E00D284A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78E1D96E2BACAB6B00D284A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78E1D9752BACAB6B00D284A0;
+			remoteInfo = TicketSasaIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		78E1D9762BACAB6B00D284A0 /* TicketSasaIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicketSasaIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78E1D9792BACAB6B00D284A0 /* TicketSasaIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketSasaIOSApp.swift; sourceTree = "<group>"; };
+		78E1D97B2BACAB6B00D284A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		78E1D97D2BACAB6B00D284A0 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		78E1D97F2BACAB6E00D284A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78E1D9822BACAB6E00D284A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		78E1D9882BACAB6E00D284A0 /* TicketSasaIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketSasaIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78E1D98C2BACAB6E00D284A0 /* TicketSasaIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketSasaIOSTests.swift; sourceTree = "<group>"; };
+		78E1D9922BACAB6E00D284A0 /* TicketSasaIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketSasaIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78E1D9962BACAB6E00D284A0 /* TicketSasaIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketSasaIOSUITests.swift; sourceTree = "<group>"; };
+		78E1D9982BACAB6E00D284A0 /* TicketSasaIOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketSasaIOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78E1D9732BACAB6B00D284A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78E1D9852BACAB6E00D284A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78E1D98F2BACAB6E00D284A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78E1D96D2BACAB6B00D284A0 = {
+			isa = PBXGroup;
+			children = (
+				78E1D9782BACAB6B00D284A0 /* TicketSasaIOS */,
+				78E1D98B2BACAB6E00D284A0 /* TicketSasaIOSTests */,
+				78E1D9952BACAB6E00D284A0 /* TicketSasaIOSUITests */,
+				78E1D9772BACAB6B00D284A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		78E1D9772BACAB6B00D284A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78E1D9762BACAB6B00D284A0 /* TicketSasaIOS.app */,
+				78E1D9882BACAB6E00D284A0 /* TicketSasaIOSTests.xctest */,
+				78E1D9922BACAB6E00D284A0 /* TicketSasaIOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78E1D9782BACAB6B00D284A0 /* TicketSasaIOS */ = {
+			isa = PBXGroup;
+			children = (
+				78E1D9792BACAB6B00D284A0 /* TicketSasaIOSApp.swift */,
+				78E1D97B2BACAB6B00D284A0 /* ContentView.swift */,
+				78E1D97D2BACAB6B00D284A0 /* Item.swift */,
+				78E1D97F2BACAB6E00D284A0 /* Assets.xcassets */,
+				78E1D9812BACAB6E00D284A0 /* Preview Content */,
+			);
+			path = TicketSasaIOS;
+			sourceTree = "<group>";
+		};
+		78E1D9812BACAB6E00D284A0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				78E1D9822BACAB6E00D284A0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		78E1D98B2BACAB6E00D284A0 /* TicketSasaIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				78E1D98C2BACAB6E00D284A0 /* TicketSasaIOSTests.swift */,
+			);
+			path = TicketSasaIOSTests;
+			sourceTree = "<group>";
+		};
+		78E1D9952BACAB6E00D284A0 /* TicketSasaIOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				78E1D9962BACAB6E00D284A0 /* TicketSasaIOSUITests.swift */,
+				78E1D9982BACAB6E00D284A0 /* TicketSasaIOSUITestsLaunchTests.swift */,
+			);
+			path = TicketSasaIOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78E1D9752BACAB6B00D284A0 /* TicketSasaIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78E1D99C2BACAB6E00D284A0 /* Build configuration list for PBXNativeTarget "TicketSasaIOS" */;
+			buildPhases = (
+				78E1D9722BACAB6B00D284A0 /* Sources */,
+				78E1D9732BACAB6B00D284A0 /* Frameworks */,
+				78E1D9742BACAB6B00D284A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TicketSasaIOS;
+			productName = TicketSasaIOS;
+			productReference = 78E1D9762BACAB6B00D284A0 /* TicketSasaIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		78E1D9872BACAB6E00D284A0 /* TicketSasaIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78E1D99F2BACAB6E00D284A0 /* Build configuration list for PBXNativeTarget "TicketSasaIOSTests" */;
+			buildPhases = (
+				78E1D9842BACAB6E00D284A0 /* Sources */,
+				78E1D9852BACAB6E00D284A0 /* Frameworks */,
+				78E1D9862BACAB6E00D284A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78E1D98A2BACAB6E00D284A0 /* PBXTargetDependency */,
+			);
+			name = TicketSasaIOSTests;
+			productName = TicketSasaIOSTests;
+			productReference = 78E1D9882BACAB6E00D284A0 /* TicketSasaIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		78E1D9912BACAB6E00D284A0 /* TicketSasaIOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78E1D9A22BACAB6E00D284A0 /* Build configuration list for PBXNativeTarget "TicketSasaIOSUITests" */;
+			buildPhases = (
+				78E1D98E2BACAB6E00D284A0 /* Sources */,
+				78E1D98F2BACAB6E00D284A0 /* Frameworks */,
+				78E1D9902BACAB6E00D284A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78E1D9942BACAB6E00D284A0 /* PBXTargetDependency */,
+			);
+			name = TicketSasaIOSUITests;
+			productName = TicketSasaIOSUITests;
+			productReference = 78E1D9922BACAB6E00D284A0 /* TicketSasaIOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78E1D96E2BACAB6B00D284A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					78E1D9752BACAB6B00D284A0 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					78E1D9872BACAB6E00D284A0 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 78E1D9752BACAB6B00D284A0;
+					};
+					78E1D9912BACAB6E00D284A0 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 78E1D9752BACAB6B00D284A0;
+					};
+				};
+			};
+			buildConfigurationList = 78E1D9712BACAB6B00D284A0 /* Build configuration list for PBXProject "TicketSasaIOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78E1D96D2BACAB6B00D284A0;
+			productRefGroup = 78E1D9772BACAB6B00D284A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78E1D9752BACAB6B00D284A0 /* TicketSasaIOS */,
+				78E1D9872BACAB6E00D284A0 /* TicketSasaIOSTests */,
+				78E1D9912BACAB6E00D284A0 /* TicketSasaIOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78E1D9742BACAB6B00D284A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78E1D9832BACAB6E00D284A0 /* Preview Assets.xcassets in Resources */,
+				78E1D9802BACAB6E00D284A0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78E1D9862BACAB6E00D284A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78E1D9902BACAB6E00D284A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78E1D9722BACAB6B00D284A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78E1D97C2BACAB6B00D284A0 /* ContentView.swift in Sources */,
+				78E1D97E2BACAB6B00D284A0 /* Item.swift in Sources */,
+				78E1D97A2BACAB6B00D284A0 /* TicketSasaIOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78E1D9842BACAB6E00D284A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78E1D98D2BACAB6E00D284A0 /* TicketSasaIOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78E1D98E2BACAB6E00D284A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78E1D9992BACAB6E00D284A0 /* TicketSasaIOSUITestsLaunchTests.swift in Sources */,
+				78E1D9972BACAB6E00D284A0 /* TicketSasaIOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		78E1D98A2BACAB6E00D284A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78E1D9752BACAB6B00D284A0 /* TicketSasaIOS */;
+			targetProxy = 78E1D9892BACAB6E00D284A0 /* PBXContainerItemProxy */;
+		};
+		78E1D9942BACAB6E00D284A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78E1D9752BACAB6B00D284A0 /* TicketSasaIOS */;
+			targetProxy = 78E1D9932BACAB6E00D284A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		78E1D99A2BACAB6E00D284A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		78E1D99B2BACAB6E00D284A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78E1D99D2BACAB6E00D284A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TicketSasaIOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pesapal.app.TicketSasaIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78E1D99E2BACAB6E00D284A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TicketSasaIOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pesapal.app.TicketSasaIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		78E1D9A02BACAB6E00D284A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pesapal.app.TicketSasaIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TicketSasaIOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TicketSasaIOS";
+			};
+			name = Debug;
+		};
+		78E1D9A12BACAB6E00D284A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pesapal.app.TicketSasaIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TicketSasaIOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TicketSasaIOS";
+			};
+			name = Release;
+		};
+		78E1D9A32BACAB6E00D284A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pesapal.app.TicketSasaIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TicketSasaIOS;
+			};
+			name = Debug;
+		};
+		78E1D9A42BACAB6E00D284A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pesapal.app.TicketSasaIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TicketSasaIOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78E1D9712BACAB6B00D284A0 /* Build configuration list for PBXProject "TicketSasaIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78E1D99A2BACAB6E00D284A0 /* Debug */,
+				78E1D99B2BACAB6E00D284A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78E1D99C2BACAB6E00D284A0 /* Build configuration list for PBXNativeTarget "TicketSasaIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78E1D99D2BACAB6E00D284A0 /* Debug */,
+				78E1D99E2BACAB6E00D284A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78E1D99F2BACAB6E00D284A0 /* Build configuration list for PBXNativeTarget "TicketSasaIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78E1D9A02BACAB6E00D284A0 /* Debug */,
+				78E1D9A12BACAB6E00D284A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78E1D9A22BACAB6E00D284A0 /* Build configuration list for PBXNativeTarget "TicketSasaIOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78E1D9A32BACAB6E00D284A0 /* Debug */,
+				78E1D9A42BACAB6E00D284A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78E1D96E2BACAB6B00D284A0 /* Project object */;
+}
