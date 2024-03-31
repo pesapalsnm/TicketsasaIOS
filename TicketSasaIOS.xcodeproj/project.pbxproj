@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		783AF17C2BB88EB0009B90BB /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783AF17B2BB88EB0009B90BB /* Network.swift */; };
+		783AF17E2BB88F64009B90BB /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783AF17D2BB88F64009B90BB /* UserModel.swift */; };
+		783AF1802BB92461009B90BB /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783AF17F2BB92461009B90BB /* LoginResponse.swift */; };
 		78E1D97A2BACAB6B00D284A0 /* TicketSasaIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E1D9792BACAB6B00D284A0 /* TicketSasaIOSApp.swift */; };
 		78E1D97C2BACAB6B00D284A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E1D97B2BACAB6B00D284A0 /* ContentView.swift */; };
 		78E1D97E2BACAB6B00D284A0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E1D97D2BACAB6B00D284A0 /* Item.swift */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		783AF17B2BB88EB0009B90BB /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		783AF17D2BB88F64009B90BB /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		783AF17F2BB92461009B90BB /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		78E1D9762BACAB6B00D284A0 /* TicketSasaIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicketSasaIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E1D9792BACAB6B00D284A0 /* TicketSasaIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketSasaIOSApp.swift; sourceTree = "<group>"; };
 		78E1D97B2BACAB6B00D284A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +79,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		783AF17A2BB88E98009B90BB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				783AF17B2BB88EB0009B90BB /* Network.swift */,
+				783AF17D2BB88F64009B90BB /* UserModel.swift */,
+				783AF17F2BB92461009B90BB /* LoginResponse.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		78E1D96D2BACAB6B00D284A0 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +112,7 @@
 		78E1D9782BACAB6B00D284A0 /* TicketSasaIOS */ = {
 			isa = PBXGroup;
 			children = (
+				783AF17A2BB88E98009B90BB /* Network */,
 				78E1D9792BACAB6B00D284A0 /* TicketSasaIOSApp.swift */,
 				78E1D97B2BACAB6B00D284A0 /* ContentView.swift */,
 				78E1D97D2BACAB6B00D284A0 /* Item.swift */,
@@ -262,6 +279,9 @@
 			files = (
 				78E1D97C2BACAB6B00D284A0 /* ContentView.swift in Sources */,
 				78E1D97E2BACAB6B00D284A0 /* Item.swift in Sources */,
+				783AF1802BB92461009B90BB /* LoginResponse.swift in Sources */,
+				783AF17C2BB88EB0009B90BB /* Network.swift in Sources */,
+				783AF17E2BB88F64009B90BB /* UserModel.swift in Sources */,
 				78E1D97A2BACAB6B00D284A0 /* TicketSasaIOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +448,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TicketSasaIOS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -456,6 +477,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TicketSasaIOS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -1,61 +1,90 @@
 //
 //  ContentView.swift
-//  TicketSasaIOS
+//  Ticketsasa
 //
-//  Created by Samuel Nyamai on 21/03/2024.
+//  Created by Samuel Nyamai on 20/03/2024.
 //
 
 import SwiftUI
 import SwiftData
 
+
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+    @EnvironmentObject var network: Network
+    
+    //todo https://designcode.io/swiftui-advanced-handbook-http-request
+    
+    @State private var email:String = ""
+    @State private var password:String = ""
 
-    var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
-                }
-                .onDelete(perform: deleteItems)
+    
+    var body: some View{
+        VStack (alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/){
+            Image("ticketsasa_logo")
+                .imageScale(.small)
+                .foregroundStyle(.tint)
+            TextField("Email Address", text: $email)
+            TextField("Password", text: $email)
+            Button(action: {
+                
+            }) {
+                Label("Sign In", systemImage: "arrow.up")
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
+            Text("Forgot Password?")
+            
+            VStack(alignment: .leading) {
+                Text(network.errorResponse?.errorMessage ?? "Empty error")
+                Text(network.loginResponse?.token ?? "No token")
+                
             }
-        } detail: {
-            Text("Select an item")
-        }
+            
+        } .background(Color.red)
+            .onAppear {
+                             network.login()
+                     }
+        
+    
     }
+    
+//    var body: some View {
+//            ScrollView {
+//                    Text("All users")
+//                    .font(.title).bold()
+//                
+//                VStack(alignment: .leading) {
+//                    ForEach(network.users) { user in
+//                        HStack(alignment:.top) {
+//                            Text("\(user.id)")
+//
+//                            VStack(alignment: .leading) {
+//                                Text(user.name)
+//                                    .bold()
+//
+//                                Text(user.email.lowercased())
+//
+//                                Text(user.phone)
+//                            }
+//                        }
+//                        .frame(width: 300, alignment: .leading)
+//                        .padding()
+//                        .background(Color(#colorLiteral(red: 0.6667672396, green: 0.7527905703, blue: 1, alpha: 0.2662717301)))
+//                        .cornerRadius(20)
+//                    }
+//                }
+//            }
+//            .onAppear {
+//                    network.getUsers()
+//            }
+//    }
+    
+    
 
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
-        }
-    }
+    
 }
+
 
 #Preview {
     ContentView()
         .modelContainer(for: Item.self, inMemory: true)
+        .environmentObject(Network())
 }

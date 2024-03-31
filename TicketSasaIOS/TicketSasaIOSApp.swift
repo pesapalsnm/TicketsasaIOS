@@ -23,10 +23,12 @@ struct TicketSasaIOSApp: App {
         }
     }()
 
+    var network = Network()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(network)
         }
-        .modelContainer(sharedModelContainer)
     }
 }
