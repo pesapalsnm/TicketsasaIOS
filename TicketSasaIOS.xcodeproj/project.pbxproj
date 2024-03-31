@@ -10,6 +10,7 @@
 		783AF17C2BB88EB0009B90BB /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783AF17B2BB88EB0009B90BB /* Network.swift */; };
 		783AF17E2BB88F64009B90BB /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783AF17D2BB88F64009B90BB /* UserModel.swift */; };
 		783AF1802BB92461009B90BB /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783AF17F2BB92461009B90BB /* LoginResponse.swift */; };
+		783AF1822BB9A15B009B90BB /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783AF1812BB9A15B009B90BB /* EventList.swift */; };
 		78E1D97A2BACAB6B00D284A0 /* TicketSasaIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E1D9792BACAB6B00D284A0 /* TicketSasaIOSApp.swift */; };
 		78E1D97C2BACAB6B00D284A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E1D97B2BACAB6B00D284A0 /* ContentView.swift */; };
 		78E1D97E2BACAB6B00D284A0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E1D97D2BACAB6B00D284A0 /* Item.swift */; };
@@ -41,6 +42,7 @@
 		783AF17B2BB88EB0009B90BB /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		783AF17D2BB88F64009B90BB /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		783AF17F2BB92461009B90BB /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		783AF1812BB9A15B009B90BB /* EventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
 		78E1D9762BACAB6B00D284A0 /* TicketSasaIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicketSasaIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E1D9792BACAB6B00D284A0 /* TicketSasaIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketSasaIOSApp.swift; sourceTree = "<group>"; };
 		78E1D97B2BACAB6B00D284A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				783AF17B2BB88EB0009B90BB /* Network.swift */,
 				783AF17D2BB88F64009B90BB /* UserModel.swift */,
 				783AF17F2BB92461009B90BB /* LoginResponse.swift */,
+				783AF1812BB9A15B009B90BB /* EventList.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				783AF1822BB9A15B009B90BB /* EventList.swift in Sources */,
 				78E1D97C2BACAB6B00D284A0 /* ContentView.swift in Sources */,
 				78E1D97E2BACAB6B00D284A0 /* Item.swift in Sources */,
 				783AF1802BB92461009B90BB /* LoginResponse.swift in Sources */,

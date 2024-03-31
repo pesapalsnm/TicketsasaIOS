@@ -9,10 +9,12 @@ import Foundation
 
 
 class Network: ObservableObject {
-//    @Published var users: [User] = []
-    @Published var users: [String] = []
+    @Published var users: [User] = []
+//    @Published var users: [String] = []
     @Published var errorResponse: ErrorResponse?
     @Published var loginResponse: LoginResponse?
+    @Published var eventListResponse: EventList?
+//    @Published var eventList: [Event] = []
     
     
     func getUsers(){
@@ -30,7 +32,7 @@ class Network: ObservableObject {
                 guard let data = data else { return }
                 DispatchQueue.main.async {
                     do {
-                        let decodedUsers = try JSONDecoder().decode([String].self, from: data)
+                        let decodedUsers = try JSONDecoder().decode([User].self, from: data)
                         self.users = decodedUsers
                     } catch let error {
                         print("Error decoding: ", error)
@@ -41,6 +43,45 @@ class Network: ObservableObject {
         
         dataTask.resume()
     }
+    
+    let token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjIxNTI2MSJ9.RriIqS941ciVeSiQinOai-BzeXVvfeV-jKT5nb5IHTc"
+    
+    func getEventData(){
+        guard let url = URL(string: "https://www.ticketsasa.com/index.php?option=com_enmasse&controller=MobileEvents&task=getEvents") else { fatalError("Missing URL") }
+        var urlRequest = URLRequest(url: url)
+        
+        urlRequest.httpMethod = "GET"
+        urlRequest.addValue("application/json", forHTTPHeaderField: "Accept")
+        urlRequest.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+        
+        let dataTask = URLSession.shared.dataTask(with: urlRequest){(data, response, error) in
+            
+
+            if let error = error{
+                print("Request error: ", error)
+                return
+            }
+            
+            guard let response = response as? HTTPURLResponse else { return }
+            
+            if response.statusCode == 200 {
+                guard let data = data else { return }
+                DispatchQueue.main.async {
+                    do {
+                        let decodedEvents = try JSONDecoder().decode(EventList.self, from: data)
+                        self.eventListResponse = decodedEvents
+//                        self.eventList = decodedEvents.events
+                    } catch let error {
+                        print("Error decoding: ", error)
+                    }
+                }
+            }
+        }
+        
+        dataTask.resume()
+    }
+    
+    
     func getPostString(params:[String:Any]) -> String
       {
           var data = [String]()
@@ -51,26 +92,18 @@ class Network: ObservableObject {
           return data.map { String($0) }.joined(separator: "&")
       }
     
-    func login(){
+    func login(email:String, password:String){
         guard let url = URL(string: "https://www.ticketsasa.com/index.php?option=com_users&task=MobileUser.login") else { fatalError("Missing URL") }
         var urlRequest = URLRequest(url: url)
 
         let bodyRequest = LoginRequest(username: "samuel@pesapal.com", password: "Future")
         let body: [String: Any] = [
-//            "username": bodyRequest.username,
-//            "password": bodyRequest.password,
-            "username": "samuel@pesapal.com",
-            "password": "Future",
+            "username": email,
+            "password": password,
         ]
 //        let jsonData = try? JSONSerialization.data(withJSONObject: body)
         let jsonData = try? JSONSerialization.data(withJSONObject: body, options: .prettyPrinted) // pass dictionary to data object and set it as request body
-        do {
-            let jsonDasta = try JSONSerialization.data(withJSONObject: body, options: .prettyPrinted) // pass dictionary to data object and set it as request body
-            print("UUUm" ,jsonData?.base64EncodedString())
-
-        } catch let error {
-            print("UUUm" ,error.localizedDescription)
-        }
+  
         urlRequest.httpMethod = "POST"
 //        urlRequest.setValue("application/json; charset=UTF-8", forHTTPHeaderField: "Content-Type")
 //        urlRequest.setValue("\(String(describing: jsonData?.count))", forHTTPHeaderField: "Content-Length")
@@ -80,7 +113,7 @@ class Network: ObservableObject {
         urlRequest.addValue("application/json", forHTTPHeaderField: "Accept")
 //        urlRequest.httpBody = jsonData
         
-        
+    
         let postString = self.getPostString(params: body)
         urlRequest.httpBody = postString.data(using: .utf8)
 

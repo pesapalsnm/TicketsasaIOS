@@ -41,14 +41,14 @@ struct LoginResponse: Codable {
 }
 
 // MARK: - User
-struct User: Codable {
+struct User:Identifiable, Codable {
     let id, name, username, email: String
     let password, passwordClear, block, sendEmail: String
     let registerDate, lastvisitDate, activation, params: String
     let groups: [String: String]
     let guest: Int
     let lastResetTime, resetCount: String
-    let aid: Int
+    var aid: Int?
     let facebook, twitter, google, phone: String
     let userid, processed: String
 
